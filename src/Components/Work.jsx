@@ -1,5 +1,6 @@
 import React from "react";
 import WorkImg from "../Assets/projects/workImg.jpeg";
+import Generic from "../Assets/projects/generic.jpg";
 // import Realestate from "../Assets/projects/realestate.jpg";
 
 const Work = () => {
@@ -19,7 +20,7 @@ const Work = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
@@ -49,7 +50,7 @@ const Work = () => {
 
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
@@ -79,7 +80,7 @@ const Work = () => {
 
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
@@ -109,7 +110,7 @@ const Work = () => {
 
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
@@ -139,7 +140,7 @@ const Work = () => {
 
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
@@ -169,7 +170,7 @@ const Work = () => {
 
           {/* Grid Item Below*/}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Generic})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effect Below */}
