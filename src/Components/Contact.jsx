@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
           <p className="text-gray-300 py-4">
             Submit the form below or mail me at{" "}
-            <a href="mailto:skolap22@gmail.com">
+            <a href="mailto:contact@shailesh.org">
               <strong>contact@shailesh.org</strong>
             </a>
           </p>
