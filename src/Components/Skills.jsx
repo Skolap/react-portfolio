@@ -18,7 +18,9 @@ const Skills = () => {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4">Experience</p>
+          <p className="text-4xl font-bold inline border-b-4 border-[#FF7452]">
+            Experience
+          </p>
           <p className="py-4"> These are technologies I've worked with</p>
         </div>
 

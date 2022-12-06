@@ -24,27 +24,52 @@ const Navbar = () => {
         {/* display above medium screen */}
 
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="hover:border-b-4 border-[#FF7452]"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="hover:border-b-4 border-[#FF7452]"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            className="hover:border-b-4 border-[#FF7452]"
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            className="hover:border-b-4 border-[#FF7452]"
+          >
             Work
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="hover:border-b-4 border-[#FF7452]"
+          >
             Contact
           </Link>
         </li>
@@ -110,6 +135,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/skolap/"
             >
               LinkedIn <FaLinkedinIn size={30} />{" "}
@@ -119,6 +146,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/Skolap"
             >
               Github <FaGithub size={30} />{" "}
@@ -128,7 +157,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between ml-[-100px] hover:ml-[-10px] duration-300 bg-[#CC3C2F]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:skolap22@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:contact@shailesh.org"
             >
               Email <HiOutlineMail size={30} />{" "}
             </a>
@@ -137,7 +168,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="ab.com"
+              target="_blank"
+              rel="noreferrer"
+              href="/"
             >
               Resume <BsFillPersonLinesFill size={30} />{" "}
             </a>
