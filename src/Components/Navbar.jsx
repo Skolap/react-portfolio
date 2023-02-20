@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import logo from "../Assets/logo.png";
 import { Link } from "react-scroll";
+import CV from "../Assets/curriculum-vitae.png";
 
 const Navbar = () => {
   // State and function for display and hide navbar on mobile device
@@ -12,9 +13,33 @@ const Navbar = () => {
   const handleClick = () => {
     setNav(!nav);
   };
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
+    } else {
+      setVisible(true);
+    }
+
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div
+      className={`w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 sticky ${
+        visible ? "top-0" : ""
+      }`}
+    >
       <div>
         <img src={logo} alt="logo" style={{ width: "80px" }} />
       </div>
@@ -165,6 +190,7 @@ const Navbar = () => {
             </a>
           </li>
           {/* Resume */}
+          {/* CV */}
           <li className="w-[160px] h-[60px] flex justify-between ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -172,7 +198,8 @@ const Navbar = () => {
               rel="noreferrer"
               href="/"
             >
-              Resume <BsFillPersonLinesFill size={30} />{" "}
+              Resume <img className="w-7" src={CV} alt="" />
+              {/* Resume <BsFillPersonLinesFill size={30} /> */}
             </a>
           </li>
         </ul>

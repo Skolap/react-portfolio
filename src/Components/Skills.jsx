@@ -11,6 +11,7 @@ import Mongo from "../Assets/mongo.png";
 import Node from "../Assets/node.png";
 import ReactLogo from "../Assets/react.png";
 import Tailwind from "../Assets/tailwind.png";
+import Redux from "../Assets/redux.svg";
 
 const Skills = () => {
   return (
@@ -53,14 +54,20 @@ const Skills = () => {
             <p>REACT</p>
           </div>
 
-          {/* Express */}
+          {/* Redux */}
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
+            <img className="w-20 mx-auto" src={Redux} alt="Redux Icon" />
+            <p>Redux</p>
+          </div>
+
+          {/* Tailwind CSS */}
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
             <img
-              className="w-21 h-20 mx-auto"
-              src={Express}
-              alt="Express Icons2"
+              className="w-20 mx-auto"
+              src={Tailwind}
+              alt="TailwindCss Icon"
             />
-            <p>EXPRESS</p>
+            <p>TAILWIND CSS</p>
           </div>
 
           {/* Git */}
@@ -75,26 +82,20 @@ const Skills = () => {
             <p>NODE</p>
           </div>
 
+          {/* Express */}
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
+            <img
+              className="w-21 h-20 mx-auto"
+              src={Express}
+              alt="Express Icons2"
+            />
+            <p>EXPRESS</p>
+          </div>
+
           {/* Mongo db */}
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
             <img className="w-20 mx-auto" src={Mongo} alt="Mongo Icon" />
             <p>MONGODB</p>
-          </div>
-
-          {/* Tailwind CSS */}
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
-            <img
-              className="w-20 mx-auto"
-              src={Tailwind}
-              alt="TailwindCss Icon"
-            />
-            <p>TAILWIND CSS</p>
-          </div>
-
-          {/* Jest */}
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-700">
-            <img className="w-20 mx-auto" src={Jest} alt="Jest Icon" />
-            <p>JEST</p>
           </div>
         </div>
       </div>
